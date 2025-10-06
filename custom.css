@@ -1,0 +1,32 @@
+/* Custom styles for Bulma layout example */
+.header-section {
+    background-color: #3273dc;
+    color: white;
+    padding: 2rem;
+}
+.nav-section {
+    background-color: #48c774;
+    color: white;
+    padding: 1.5rem;
+}
+.left-column {
+    background-color: #ffdd57;
+    padding: 1.5rem;
+    min-height: 400px;
+}
+.center-column {
+    background-color: #f5f5f5;
+    padding: 1.5rem;
+    min-height: 400px;
+}
+.right-column {
+    background-color: #ff3860;
+    color: white;
+    padding: 1.5rem;
+    min-height: 400px;
+}
+.footer-section {
+    background-color: #363636;
+    color: white;
+    padding: 2rem;
+}

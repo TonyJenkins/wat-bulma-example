@@ -5,50 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bulma Layout Example</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <style>
-        .header-section {
-            background-color: #3273dc;
-            color: white;
-            padding: 2rem;
-        }
-        .nav-section {
-            background-color: #48c774;
-            color: white;
-            padding: 1.5rem;
-        }
-        .left-column {
-            background-color: #ffdd57;
-            padding: 1.5rem;
-            min-height: 400px;
-        }
-        .center-column {
-            background-color: #f5f5f5;
-            padding: 1.5rem;
-            min-height: 400px;
-        }
-        .right-column {
-            background-color: #ff3860;
-            color: white;
-            padding: 1.5rem;
-            min-height: 400px;
-        }
-        .footer-section {
-            background-color: #363636;
-            color: white;
-            padding: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="custom.css">
 </head>
 <body>
     <!-- Header Section - Full Width -->
-    <section class="section header-section">
-        <div class="container is-fluid">
-            <h1 class="title is-1 has-text-white">Welcome to Bulma Layout</h1>
-            <p class="subtitle has-text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-        </div>
-    </section>
+    <header>
+        <section class="section header-section">
+            <div class="container is-fluid">
+                <h1 class="title is-1 has-text-white">Welcome to Bulma Layout</h1>
+                <p class="subtitle has-text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+            </div>
+        </section>
+    </header>
 
     <!-- Navigation Section - Full Width -->
     <section class="section nav-section">
@@ -82,11 +52,12 @@
     </section>
 
     <!-- Main Content - Three Columns (20%-50%-30%) -->
-    <section class="section">
-        <div class="container is-fluid">
-            <div class="columns">
-                <!-- Left Column - 20% -->
-                <div class="column is-one-fifth left-column">
+    <main>
+        <section class="section is-fluid">
+            <div class="container">
+                <div class="columns">
+                    <!-- Left Column - 20% -->
+                    <div class="column is-one-fifth left-column">
                     <h2 class="title is-4">Left Column (20%)</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod, nisi eu congue semper, mi nulla tempor libero, quis tincidunt nisi leo at mauris. Nullam euismod libero id nunc tempor, ac venenatis augue tincidunt.
@@ -110,19 +81,20 @@
                     </p>
                 </div>
 
-                <!-- Right Column - 30% -->
-                <div class="column is-3-of-10 right-column">
-                    <h2 class="title is-4 has-text-white">Right Column (30%)</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
-                    </p>
-                    <p>
-                        Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
-                    </p>
+                    <!-- Right Column - 30% -->
+                    <aside class="column is-3-of-10 right-column">
+                        <h2 class="title is-4 has-text-white">Right Column (30%)</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.
+                        </p>
+                        <p>
+                            Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+                        </p>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer Section - Full Width -->
     <footer class="footer footer-section">
